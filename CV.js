@@ -20,38 +20,20 @@ document.getElementById('img.portfolio3').addEventListener('click', function () 
 
 window.addEventListener('resize', function() { 
   var ancho = window.innerWidth;
-  if (ancho <= 500) {
+  if (ancho <= 510) {
    navbar_titulo.textContent = 'CV';
    navbar_informacion.textContent = 'Info';
    navbar_portafolio.textContent = 'Port';
    
    
   }
-  if (ancho > 500) {
+  if (ancho > 510) {
     navbar_titulo.textContent = 'Curriculum Vitae';
     navbar_informacion.textContent = 'Informacion';
     navbar_portafolio.textContent = 'Portafolio';  
   }
 });
 
-
-/** 
- if (ancho <= 760) {
-    perfil.className ='col-12';
-  }
-  if (ancho <= 760) {
-    perfil.className ='col-12';
-  } 
-window.addEventListener('resize', function() {
-  var ancho = window.innerWidth;
-  if (ancho <= 780) {
-    datos_perfil.setAttribute ('class','col-12')
-  }
-  if (ancho > 780) {
-    datos_perfil.setAttribute ('class','col-3')
-  }
-});
-*/
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 
 const alert = (message, type) => {
