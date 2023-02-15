@@ -1,10 +1,10 @@
+/** Generales **/
 img {
     height: 10em;
 }
 
-.progress {
-    margin-top: 15px; 
-    margin-bottom: 15px;
+i {
+    margin-right: 5px;
 }
 
 .container>.row {
@@ -12,25 +12,29 @@ img {
     margin-bottom: 15px;
 }
 
-.card {
-  margin-top: 15px; 
+/** Imagen de Perfil **/
+#img_perfil {
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    width: 250px;
+    height: 250px;
+    border: 3px solid #5bc0de;
+}
+/** Datos personales **/
+#datos_personales {
   margin-bottom: 15px;
 }
 
-#datosdellector>.col-12 {
-  margin-top: 15px;
+/** Conocimientos **/
+.progress {
+    margin-top: 15px; 
+    margin-bottom: 15px;
 }
 
-#otros {
-  margin-top: 25px; 
-}
-
+/** Galeria **/
 #miniaturas {
-    margin-bottom: 10px;
-}
-
-i {
-    margin-right: 5px;
+   display: flex;
+   align-items: center;
 }
 
 #imagen_ampliada {
@@ -44,39 +48,12 @@ i {
     height: fit-content;
 }
 
-#img_perfil {
-    margin-top: 30px; 
-    margin-bottom: 30px;
-    width: 250px;
-    height: 250px;
+/** Formulario **/
+#datosdellector>.col-12 {
+  margin-top: 15px;
 }
 
-#info {
-    margin-top: 30px; 
-    margin-bottom: 30px;
-} 
-
-#tarjetas {
-    margin-top: 30px; 
-    margin-bottom: 30px;}
-
-#liveAlertPlaceholder {margin-top: 30px;}
-
-.responsiveContent {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 56.2%;
-  margin-bottom: 20px;
-}
-.responsiveContent iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
+/** Mapa (Iframe de Google Maps) **/
 #mapa {
     position: relative;
     height: 0;
@@ -84,6 +61,7 @@ i {
     padding-bottom: 56.2%;
     margin-bottom: 20px;
   }
+
 #mapa iframe {
     position: absolute;
     top: 0;
@@ -91,3 +69,31 @@ i {
     width: 100%;
     height: 100%;
   }
+
+/** Tarjetas **/
+.card {
+  margin-top: 15px; 
+  margin-bottom: 15px;
+}
+
+/** Botonera **/
+#otros {
+  margin-top: 25px; 
+}
+
+#placeholder {margin-top: 30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

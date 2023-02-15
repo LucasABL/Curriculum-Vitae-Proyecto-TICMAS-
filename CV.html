@@ -7,15 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Curriculum</title>
+    <title>Curriculum Vitae</title>
 
-    <link rel="stylesheet" type="text/css" href="/ProyectoCV/CV.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<!--Libreria de animaciones (AOS)-->   
+     <link rel="stylesheet"href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+
+<!--Librerias de estilos (Bootstrap)--> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<!--Libreria de iconos (Tambien Bootstrap)-->    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+<!--CSS propio-->   
+    <link rel="stylesheet" type="text/css" href="/ProyectoCV/CV.css"> 
 </head>
 
 <body>
+    
+    <!--Barra de desplazamiento-->
     <div class="sticky-top">
         <nav id="navbar" class="navbar bg-body-tertiary px-3 mb-3">
             <div> <i class="bi bi-briefcase-fill" style="font-size: 20px; "></i><a id="navbar_titulo" class="navbar-brand" href="#"> Curriculum Vitae</a> </div>
@@ -32,73 +41,88 @@
             </ul>
         </nav>
     </div>
-
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <div data-bs-spy="scroll"  data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    
+    <!--Contenido de pagina--> 
     <div id="container-fluid" class="container">
         
+        <!--Presentacion (Imagen y descripcion)-->
         <div id="encabezado">
-            <img id="img_perfil" src="https://randomuser.me/api/portraits/women/90.jpg" class="rounded-circle mx-auto d-block" alt="Foto de Perfil">
+            <img data-aos="fade-down" data-aos-duration="1000" id="img_perfil" src="https://randomuser.me/api/portraits/women/90.jpg" class="rounded-circle mx-auto d-block" alt="Foto de Perfil">
             <figure class="text-center">
                 <blockquote class="blockquote">
-              <h1>Dennise Jones</h1>
+                    <h1 data-aos="fade-down" data-aos-duration="1000">Dennise Jones</h1>
                 </blockquote>
-
-                <figcaption class="blockquote-footer">
-              Licenciada en <cite title="Source Title">Diseño Gráfico</cite>
-                </figcaption>
+                <figcaption class="blockquote-footer" data-aos="flip-left" data-aos-duration="1000">Licenciada en <cite title="Source Title">Diseño Gráfico</cite></figcaption>
             </figure>
-        </div>  
-        <p id="descripcion" class="animate__animated animate_backInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis non felis euismod vestibulum. Aliquam vehicula purus vel libero luctus, sed suscipit nunc feugiat. Curabitur eget vehicula est. Sed egestas, erat quis porttitor consectetur, nunc eros cursus velit, nec scelerisque mauris dolor id est. Curabitur tempor ligula vel mauris molestie, quis rhoncus mi facilisis. Nam ac efficitur ligula, id dignissim lectus. Maecenas eu augue tortor. Sed at finibus est, vitae egestas neque. Curabitur porttitor mattis maximus. Nunc faucibus sagittis purus at consectetur.</p>
-
-        <div id="informacion" class="row" data-bs-root-margin="0px 0px" >
+                 <p id="descripcion" data-aos="fade-right" data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis non felis euismod vestibulum. Aliquam vehicula purus vel libero luctus, sed suscipit nunc feugiat. Curabitur eget vehicula est. Sed egestas, erat quis porttitor consectetur, nunc eros cursus velit, nec scelerisque mauris dolor id est. Curabitur tempor ligula vel mauris molestie, quis rhoncus mi facilisis. Nam ac efficitur ligula, id dignissim lectus. Maecenas eu augue tortor. Sed at finibus est, vitae egestas neque. Curabitur porttitor mattis maximus. Nunc faucibus sagittis purus at consectetur.</p>
+        </div> 
+        
+        <!--Hoja de vida-->
+        <div id="informacion" class="row">
+            
+            <!--Informacion Personal y Habilidades-->
             <div id="perfil" class="col-12 col-sm-12 col-md-3">
                 <div class="row">
-                <div id="datos_personales" class="col-6 col-sm-6 col-md-12">
-                    <h3>Informacion Personal</h3>
-                    <li><b>Email: </b></li><small class="text-muted">rolandop@gmail.com</small>
-                    <li><b>Nacimiento: </b></li><small class="text-muted">17/9/1986</small>
-                    <li><b>Direccion: </b></li><a class="nav-link" href="#mapa">Ameghino 6789</a>
-                    <li><b>Teléfono: </b></li><small class="text-muted">(451) 6574-4352</small>
-                    <li><b>Contraseña: </b></li><small class="text-muted">ghjuyod</small>
-                </div>
-                <div id="habilidades" class="col-6 col-sm-6 col-md-12"> 
-                    <h3 class="d-none d-sm-block">Conocimientos</h3>                      
-                    <strong>Java</strong>
-                    <div class="progress" style="height: 1px">
-                        <div class="progress-bar" style="width: 60%"></div>
+                    
+                    <!--Datos Personales-->
+                    <div id="datos_personales" class="col-6 col-sm-6 col-md-12" data-aos="zoom-out">
+                        <h3 data-aos="fade-down-right">Informacion Personal</h3>
+                        <li><b>Email: </b></li>
+                        <small class="text-muted">rolandop@gmail.com</small>
+                        <li><b>Nacimiento: </b></li>
+                        <small class="text-muted">17/9/1986</small>
+                        <li><b>Direccion: </b></li>
+                        <a class="nav-link" href="#mapa">Ameghino 6789</a>
+                        <li><b>Teléfono: </b></li>
+                        <small class="text-muted">(451) 6574-4352</small>
+                        <li><b>Contraseña: </b></li>
+                        <small class="text-muted">ghjuyod</small>
                     </div>
-                    <strong>HTML</strong>
-                    <div class="progress" style="height: 1px">
-                        <div class="progress-bar" style="width: 100%"></div>
-                    </div>
-                    <strong>SQL</strong>
-                    <div class="progress" style="height: 1px">
+                    
+                    <!--Conocimientos-->
+                    <div id="conocimientos" class="col-6 col-sm-6 col-md-12" data-aos="zoom-out"> 
+                        <h3 class="d-none d-sm-block" data-aos="fade-down-right">Conocimientos</h3>                      
+                        <strong>Java</strong>
+                        <div class="progress" style="height: 1px">
+                            <div class="progress-bar" style="width: 60%"></div>
+                        </div>
+                        <strong>HTML</strong>
+                        <div class="progress" style="height: 1px">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                        <strong>SQL</strong>
+                        <div class="progress" style="height: 1px">
                         <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                        <strong>C++</strong>
+                        <div class="progress" style="height: 1px">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                        <strong>Java Script</strong>
+                        <div class="progress" style="height: 1px">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                        <strong>GIT</strong>
+                        <div class="progress" style="height: 1px">
+                            <div class="progress-bar" style="width: 70%"></div>
+                        </div>
                     </div>
-                    <strong>C++</strong>
-                    <div class="progress" style="height: 1px">
-                        <div class="progress-bar" style="width: 75%"></div>
-                    </div>
-                    <strong>Java Script</strong>
-                    <div class="progress" style="height: 1px">
-                        <div class="progress-bar" style="width: 80%"></div>
-                    </div>
-                    <strong>GIT</strong>
-                    <div class="progress" style="height: 1px">
-                        <div class="progress-bar" style="width: 70%"></div>
-                    </div>
-                </div>
                 </div>                    
             </div>
+            
+            <!--Acordeon (Ecucacion, Experiencia, etc.)-->
             <div class="col-12 col-sm-12 col-md-9">
-                <div class="accordion" id="accordionExample">
+                <div class="accordion" data-aos="zoom-out-left">
+                    
+                    <!--Estudios-->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                        <h2 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <i class="bi bi-book"></i> Estudios
                         </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" >
+                        <div id="collapseOne" class="accordion-collapse collapse show">
                             <div class="accordion-body">
                                 <div class="row">
                                 <div class="col-6">    
@@ -113,25 +137,29 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!--Experiencia-->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
+                        <h2 class="accordion-header" >
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <i class="bi bi-coin"></i> Experiencia
                         </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                        <div id="collapseTwo" class="accordion-collapse collapse" >
                             <div class="accordion-body">
                                 <strong>Desarrollador Web - </strong> Nam hendrerit odio non nulla aliquam, rhoncus ornare tortor euismod. In vitae ante nibh. In eu aliquam nunc. Curabitur tempor quis justo in luctus. Integer sem nibh, suscipit id augue vitae, lobortis vehicula lorem. Quisque accumsan porttitor ipsum non dignissim. Morbi sodales porttitor blandit. In et massa purus. Proin ac est felis. Integer ipsum libero, vulputate vel euismod et, condimentum sed lorem. Vivamus non pretium est, a laoreet tortor. Sed dignissim, sapien sit amet dictum facilisis, lacus metus fringilla neque, et tempus tortor elit vel nisi.
                             </div>
                         </div>
                     </div>
+                    
+                    <!--Habilidades-->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
+                        <h2 class="accordion-header" >
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <i class="bi bi-brush"></i> Habilidades
                         </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" >
+                        <div id="collapseThree" class="accordion-collapse collapse">
                             <div class="accordion-body">
                                 <div class="row">
                                     <div class="col-6">
@@ -159,10 +187,14 @@
                 </div>
             </div>
         </div>
+        
+        <!--Portafolio-->
         <div id="portafolio" class=row>
-            <h2>Portafolio <i class="bi bi-journal-bookmark-fill"></i></h2>
+            <h2 data-aos="fade-left">Portafolio <i class="bi bi-journal-bookmark-fill"></i></h2>
+            
+            <!--Tarjeta 1 (Proyecto 1)-->
             <div class="col-6 col-md-4 col-xl-3">
-                <div class="card" >
+                <div class="card" data-aos="fade-left" data-aos-delay="300" data-aos-offset="0">
                     <img src="https://images3.alphacoders.com/146/146685.jpg" class="card-img-top" alt="Un lugar fantástico">
                     <div class="card-body">
                         <h5 class="card-title">Proyecto Alfa</h5>
@@ -171,8 +203,10 @@
                     </div>
                 </div>
             </div>
+            
+            <!--Tarjeta 2 (Proyecto 2)-->
             <div class="col-6 col-md-4 col-xl-3">
-                <div class="card" >
+                <div class="card" data-aos="fade-left" data-aos-delay="600" data-aos-offset="0">
                     <img src="https://i.pinimg.com/550x/e1/6b/83/e16b83b30315701a8c97ee4557e42d56.jpg" class="card-img-top" alt="Un lugar fantástico">
                     <div class="card-body">
                         <h5 class="card-title">Proyecto Beta</h5>
@@ -181,8 +215,10 @@
                     </div>
                 </div>
             </div>
+            
+            <!--Tarjeta 3 (Proyecto 3)-->
             <div class="col-6 col-md-4 col-xl-3">
-                <div class="card" >
+                <div class="card" data-aos="fade-left" data-aos-delay="900" data-aos-offset="0">
                     <img src="https://i.ytimg.com/vi/qOceaNmhrOk/maxresdefault.jpg" class="card-img-top" alt="Un lugar fantástico">
                     <div class="card-body">
                         <h5 class="card-title">Proyecto Gamma</h5>
@@ -190,9 +226,11 @@
                         <a href="https://youtu.be/c6t6E9ZfkJ4" class="btn btn-primary">Ver <i class="bi bi-eye-fill"></i></a>
                     </div>
                 </div>
-            </div>  
+            </div>
+            
+            <!--Tarjeta 4 (Proyecto 4)-->  
             <div class="col-6 col-md-4 col-xl-3">
-                <div class="card" >
+                <div class="card" data-aos="fade-left" data-aos-delay="1200" data-aos-offset="0">
                     <img src="https://images6.alphacoders.com/975/thumbbig-975701.webp" class="card-img-top" alt="Un lugar fantástico">
                     <div class="card-body">
                         <h5 class="card-title">Proyecto Delta</h5>
@@ -202,66 +240,88 @@
                 </div>
             </div>    
         </div>
-        <div class="row" id="galeria">
+        
+        <!--Galeria-->
+        <div class="row" id="galeria" data-aos="zoom-in">
+            
+            <!--Miniaturas-->
             <div class="col-12 col-md-3">
                 <div id="miniaturas" class="row">
-                    <div class="col-4 col-md-12"><img id="img.portfolio1" class="img-thumbnail img-fluid" src="https://img.freepik.com/foto-gratis/impresionantes-vistas-parque-nacional-noruego-rio-fiordos-dia-luminoso_613910-17487.jpg?size=626&ext=jpg&ga=GA1.2.770147115.1675820542&semt=ais"></div>
-                    <div class="col-4 col-md-12"><img id="img.portfolio2" class="img-thumbnail img-fluid" src="https://img.freepik.com/foto-gratis/hermosa-foto-lago-cristalino-junto-base-montana-nevada-dia-soleado_181624-5459.jpg?size=626&ext=jpg&ga=GA1.2.770147115.1675820542&semt=ais"></div>
-                    <div class="col-4 col-md-12"><img id="img.portfolio3" class="img-thumbnail img-fluid" src="https://img.freepik.com/foto-gratis/hermosa-foto-colinas-cubiertas-hierba-cubiertas-arboles-cerca-montanas-dolomitas-italia_181624-24400.jpg?size=626&ext=jpg&ga=GA1.2.770147115.1675820542&semt=ais"></div>
+                    <div class="col-4 col-md-12" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0">
+                        <img id="img.portfolio1" class="img-thumbnail img-fluid" src="https://img.freepik.com/foto-gratis/impresionantes-vistas-parque-nacional-noruego-rio-fiordos-dia-luminoso_613910-17487.jpg?size=626&ext=jpg&ga=GA1.2.770147115.1675820542&semt=ais">
+                    </div>
+                    <div class="col-4 col-md-12" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0">
+                        <img id="img.portfolio2" class="img-thumbnail img-fluid" src="https://img.freepik.com/foto-gratis/hermosa-foto-lago-cristalino-junto-base-montana-nevada-dia-soleado_181624-5459.jpg?size=626&ext=jpg&ga=GA1.2.770147115.1675820542&semt=ais">
+                    </div>
+                    <div class="col-4 col-md-12" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0">
+                        <img id="img.portfolio3" class="img-thumbnail img-fluid" src="https://img.freepik.com/foto-gratis/hermosa-foto-colinas-cubiertas-hierba-cubiertas-arboles-cerca-montanas-dolomitas-italia_181624-24400.jpg?size=626&ext=jpg&ga=GA1.2.770147115.1675820542&semt=ais">
+                    </div>
                 </div>
             </div>
+            
+            <!--Imagen-->
             <div id="imagen_ampliada" class="col-12 col-md-9">
                 <i class="bi bi-image" style="font-size: 10em; "></i> 
             </div>
         </div>
-        <h3>Mi Ubicacion <i class="bi bi-geo-alt"></i></h3>
-        <div id="mapa" class="row">
-            
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2140.248605753761!2d-68.2861303659614!3d-42.52125674858041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9601b76a3e59e329%3A0x90dc7b6fce25332e!2sROMA%20SHOWROOM!5e0!3m2!1ses-419!2sar!4v1676147644420!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <!--Ubicacion-->
+        <h3 data-aos="fade-up">Mi Ubicacion <i class="bi bi-geo-alt"></i></h3>
+        <div id="mapa" class="row">            
+            <iframe data-aos="fade-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2140.248605753761!2d-68.2861303659614!3d-42.52125674858041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9601b76a3e59e329%3A0x90dc7b6fce25332e!2sROMA%20SHOWROOM!5e0!3m2!1ses-419!2sar!4v1676147644420!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        
+        <!--Zona de formulario-->
         <div>
-<button type="button mx-auto" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    <b> Formulario de contacto <i class="bi bi-send"></i></b>
-</button>
-  
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario de contacto</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            
+            <!--Boton formulario-->
+            <button data-aos="zoom-out" type="button mx-auto" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
+                <b>Formulario de contacto <i class="bi bi-send"></i></b>
+            </button>  
+            
+            <!--Modal-->
+            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario de contacto</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        
+                        <!--Formulario-->
+                        <div class="modal-body">
+                            <form>
+                                <div id="datosdellector" class="row mb-3">
+                                    <div class="col-12 col-sm-4">
+                                        <label class="form-label" for="nombre">Nombre</label>
+                                        <input id="nombre" type="text" class="form-control" name="First name">
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <label class="form-label" for="apellido">Apellido</label>
+                                        <input id="apellido" type="text" class="form-control" name="Last name">
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                    <label class="form-label" for="mail">Email</label>
+                                    <input id="mail" type="mail" class="form-control" name="First name">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">¿En que puedo ayudarte?</label>
+                                    <textarea id="mensaje" class="form-control" name="" rows="3"></textarea>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary" type="button">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-            <form>
-            <div id="datosdellector" class="row mb-3">
-                <div class="col-12 col-sm-4">
-                    <label class="form-label" for="nombre">Nombre</label>
-                    <input id="nombre" type="text" class="form-control" name="First name">
-                  </div>
-                  <div class="col-12 col-sm-4">
-                    <label class="form-label" for="apellido">Apellido</label>
-                    <input id="apellido" type="text" class="form-control" name="Last name">
-                  </div>
-                  <div class="col-12 col-sm-4">
-                    <label class="form-label" for="mail">Email</label>
-                    <input id="mail" type="mail" class="form-control" name="First name">
-                  </div>
-              </div>
-              <div class="mb-3">
-                <label for="mensaje" class="form-label">¿En que puedo ayudarte?</label>
-                <textarea id="mensaje" class="form-control" name="" rows="3"></textarea>
-              </div>
-              <div>
-                <button class="btn btn-primary" type="button">Enviar</button>
-              </div>
-            </form>
-        </div>
-        </div>
-    </div>
-  </div>
-        </div>
-        <div id="otros">
-            <button type="button" class="btn btn-sm btn-primary" id="liveAlertBtn">Haga click aqui</button>
+        
+        <!--Botonera-->
+        <div data-aos="fade-up" data-aos-offset="0" id="otros">
+            <button type="button" class="btn btn-sm btn-primary" id="alerta">Haga click aqui</button>
             
             <button type="button" class="btn btn-sm btn-secondary"
             data-bs-toggle="popover" data-bs-placement="right"
@@ -269,10 +329,18 @@
             Email desarrollador
             </button> 
         </div>  
-        <div id="liveAlertPlaceholder"></div>     
+        <div id="placeholder"></div>     
     </div>
     </div>
+    
+    <!--Scripts AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
+    
+    <!--Scripts Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <!--Scripts Propios--> 
     <script src="/ProyectoCV/CV.js"></script>
 </body>
 
